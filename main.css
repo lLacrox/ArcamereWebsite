@@ -25,11 +25,41 @@ body {
 	padding: 1rem;
 }
 
+/*  --- BASIC TEXT --- */
+
+P {
+	font-size: 18px;
+	text-align: left;
+}
+
+H1 {
+	font-size: 30pt;
+    word-spacing: 5px;
+	text-decoration: underline solid;
+}
+
+H2{
+	font-size: 24pt;
+    word-spacing: 5px;
+}
+
+H3 {
+	font-size: 22pt;
+    word-spacing: 5px;
+}
+
+H4 {
+	font-size: 18pt;
+    word-spacing: 5px;
+	text-decoration: underline solid;
+}
+
 /*  --- HEADER --- */
 #header {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	font-weight: bold;
 	gap: 1rem;
 	width: 100%;
 }
@@ -37,7 +67,7 @@ body {
 /*--- MAIN ---*/
 #container {
 	position: absolute;
-  	top: 28em;
+  	top: 27em;
  	width: 100%;
 
   	min-height: 85%;
@@ -52,11 +82,13 @@ body {
 	box-sizing: border-box;
 }
 
+/*--- TRAILER VIDEO ---*/
+
 #trailervideo {
   background-color: #fff;
-  box-shadow: 0px 0px 20px 0px #f0c579;
-  height: 288px;
-  width: 512px;
+  box-shadow: 0px 0px 25px 0px #f0c579;
+  height: 18em;
+  width: 32em;
 }
 
 /*--- LOGO ---*/
@@ -94,10 +126,63 @@ body {
 	transition: transform 0.2s ease;
 }
 
-
-
 .socialicons img:hover {
 	transform: scale(1.2);
+}
+
+/*--- NAVIGATION ---*/
+#nav {
+	z-index: 2;
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	background-color: #e9e9e9;
+
+}
+
+#nav A {
+	padding: 0.5em;
+	text-decoration: none;
+	color: #0E0E0E;
+}
+
+#nav A:hover {
+	color: #0020F0;
+}
+
+#nav A:active {
+	color: #2080FF;
+}
+
+#nav .seperator {
+	display: inline-block;
+}
+
+/*--- NOTICE ---*/
+
+#notice {
+	background-color: #e9e9e9;
+	border: 0.5em solid #e9e9e9;
+	box-shadow: 0px 0px 10px 0px #0F0F0F;
+	border-radius: 5px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#notice P {
+	font-size: 20px;
+	text-align: center;
+	font-style: italic;
+}
+
+/*--- SERVER FEATURES ---*/
+
+#serverfeatures {
+	text-align: center;
+}
+
+#serverfeatures H2 {
+	text-align: left;
 }
 
 /*--- FORMATTING ---*/
@@ -108,16 +193,12 @@ body {
 
 .center {
 	text-align: center;
+	margin: 0;
 }
 
 .right {
 	text-align: right;
 	right: 0px;
-}
-
-/* --- NAVIGATION --- */
-.nav {
-	
 }
 
 /* --- FOOTER --- */
